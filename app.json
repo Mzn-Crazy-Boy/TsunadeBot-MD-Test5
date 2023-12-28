@@ -1,0 +1,121 @@
+{
+  "name": "TsunadeBot [WA-Multi Device]",
+  "description": "A WhatsApp chatbot that offers various services through an automated conversational experience.",
+  "keywords": [
+    "whatsapp bot"
+  ],
+  "repository": "https://github.com/mznking/TsunadeBot-MD",
+  "logo": "https://i.imgur.com/yxT8JtL.jpeg",
+  "stack": "container",
+  "env": {
+    "AUTO_READ": {
+      "description": "Would you like the bot to automatically sends read receipts for incoming messages? 🧚❤️",
+      "required": true,
+      "value": "true"
+    },
+    "AUTO_TYPE": {
+      "description": "Would you like the bot to automatically sends typing in personal & group chats? (Fake typing action) 🧚❤️",
+      "required": true,
+      "value": "true"
+    },
+    "AUTO_RECORD": {
+      "description": "Would you like the bot to automatically sends recording in personal & group chats? (Fake recording action) 🧚❤️",
+      "required": true,
+      "value": "true"
+    },
+    "AUTO_BLOCK_212": {
+      "description": "Would you like the bot to automatically remove Morocco(212) numbers from groups (There could be geographical, political, security, or market-related reasons for restricting access to certain platforms in Morocco.) 🧚❤️",
+      "required": true,
+      "value": ""
+    },
+     "AUTO_KICK_212": {
+      "description": "Put your Heroku api key Here , Get one from here https://dashboard.heroku.com/account",
+      "required": true,
+      "value": ""
+    },
+     "OPENAI_APIKEY": {
+      "description": "Enter the api key of openai, for using gpt command for generate text from prompt using GPT-3.5-Turbo language model. Get your api key from: https://beta.openai.com/account/api-keys 🧚❤️",
+      "required": true,
+      "value": ""
+    },
+    "TIME_ZONE": {
+      "description": "Enter the timezone of your country, leave it empty for use GMT(Greenwich Mean time). Get your timezone from https://github.com/mznking/TsundeBot-MD#assets/timezone/timezones.json 🧚❤️",
+      "required": true,
+      "value": "GMT"
+    },
+    "OWNER_NUMBER": {
+      "description": "Provide the number of bot owner here. (Owner vCard) 🧚❤️",
+      "required": true,
+      "value": "94771227821"
+    },
+    "OWNER_NAME": {
+      "description": "Provide the name of bot owner here. (Owner vCard) 🧚❤️",
+      "required": true,
+      "value": "Maazin 🫶"
+    },
+     "LOCATION": {
+      "description": "Provide the location of bot owner. (Owner vCard) 🧚❤️",
+      "required": true,
+      "value": "India, Mizoram, Aizawl"
+    },
+    "BOT_NAME": {
+      "description": "Provide a name of bot. 🧚❤️",
+      "required": true,
+      "value": "Tsunade Bot"
+    },
+    "SUDO_NUMBERS": {
+      "description": "Provide the numbers of sudo users. 🧚❤️",
+      "required": true,
+      "value": "94771227821@s.whatsapp.net,94789481495@s.whatsapp.net"
+    },
+    "OWNER_WEBSITE": {
+      "description": "Provide the website of owner. 🧚❤️",
+      "required": true,
+      "value": "https://youtube.com/@mznking"
+    },
+    "BOT_GROUP": {
+      "description": "Provide the link of bot group. 🧚❤️",
+      "required": true,
+      "value": "https://chat.whatsapp.com/"
+    },
+    "REACTION_NUMBER": {
+      "description": "Provide the number of user to automatically react. 🧚❤️",
+      "required": true,
+      "value": "94755555555"
+    },
+    "REACTION_EMOJI": {
+      "description": "Provide the emoji for react automatically. 🧚❤️",
+      "required": true,
+      "value": "🧚"
+    },
+    "PACK_NAME": {
+      "description": "Provide the pack name of sticker made by bot. 🧚❤️",
+      "required": true,
+      "value": "My stickers pack"
+    },
+    "AUTHOR_NAME": {
+     "description": "Provide the author name of sticker made by bot. 🧚❤️",
+     "required": true,
+     "value": "My stickers"
+    },
+    "CREATOR_JID": {
+     "description": "Provide the jid of bot developer. 🧚❤️"
+     "required": true,
+     "value": "94771227821@s.whatsapp.net"
+    }
+    },
+    "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ]
+}
